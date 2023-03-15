@@ -20,10 +20,21 @@ const Home = () => {
 <p className='home__job'>
     <span className='text-cs'>I Am </span><b>FrontEnd Developer </b> 
 </p>
+
+
+<div className='home__img-wrapper'>
+<div className='home__banner'>
+<img src={profileImg} alt="" className='home__profile' />
+
+</div>
+</div>
+
+
 <p className='home__text'>
  From Pondicherry, india. I have rich experience in frontend design and development , also im good at nodejs backend.
 
 </p>
+
 
 <div className='home__socials'>
     <a href=''className='home__social-link'>
@@ -44,9 +55,7 @@ const Home = () => {
        </a>
 
     <a href='' className='hero__link text-cs'>
-    <button >
         my Skills
-        </button>
     </a>
 </div>
         </div>
