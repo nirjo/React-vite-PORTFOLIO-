@@ -1,14 +1,25 @@
-import React from "react";
+import React  from "react";
 import profileImg from "../../assets/profile-img.png";
 import { FaBeer } from "react-icons/fa";
 // import { FaTwitter,FaDribble,FaBehance } from 'react-icons/fa'
 import "./home.css";
 
 const Home = () => {
+  // const [ loading , setLoading] = useState(false);
+
+  // useEffect(()=>{
+  //   setLoading(true)
+  //   setTimeout(()=>{
+  //     setLoading(false);
+
+  //   },4000)
+
+  // },[])
   return (
     <section>
-      <div className="home">
-        <div className="home__contianer ">
+      <div className="home" id ='home'>
+      <div className="home__wrapper">
+        <div className="home__container contianer ">
           <p className="home__subtitle text-cs">
             Hello ,<span>My name Is</span>
           </p>
@@ -25,6 +36,7 @@ const Home = () => {
           <div className="home__img-wrapper">
             <div className="home__banner">
               <img src={profileImg} alt="" className="home__profile" />
+
             </div>
 
             <p className="home__data home__data-one">
@@ -72,6 +84,7 @@ const Home = () => {
             </a>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
